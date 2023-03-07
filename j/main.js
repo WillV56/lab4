@@ -29,6 +29,7 @@ function changeSlide(e) {
     const slides = document.querySelectorAll("img");
     let showing = document.querySelector(".current");
     let nextUp = "";
+    let caption = document.getElementById('caption');
 
     if(!e || e.target.className == 'next-btn') {
         nextUp = showing.nextElementSibling;
@@ -50,4 +51,12 @@ function changeSlide(e) {
     nextUp.classList.remove("hide");
 
     nextUp.classList.add("current");
+
+    let altText = nextUp.getAttribute('alt');
+   
+    caption.innerText = altText;
 }
+
+// function changeAlbum(albumName) {
+
+// }
