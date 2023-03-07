@@ -6,7 +6,7 @@ function init() {
     const back_btn = document.querySelector(".back-btn");
     const next_btn = document.querySelector(".next-btn");
     const frame = document.querySelector(".frame");
-    const slides = document.querySelector(".slides");
+    const slides = frame.querySelectorAll("img");
 
     slides.forEach((slide) => {
         slide.classList.add("hide");
@@ -40,7 +40,7 @@ function changeSlide(e) {
     showing.classList.remove("current");
 
     if (!nextUp) {
-        nextup = slides[slides.length - 1];
+        nextUp = slides[slides.length - 1];
     }
 
     if (nextUp.nodeName !== "IMG") {

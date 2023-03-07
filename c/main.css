@@ -2,6 +2,11 @@ body {
     text-align: center;
 }
 
+section {
+    width: 400px;
+    margin: auto;
+}
+
 .frame {
     position: relative;
     width: 400px;
@@ -14,13 +19,14 @@ body {
     margin-bottom: 2rem;
 }
 
+.hide {
+    display: none;
+}
+
 img {
     max-width: 500px;
     max-height: 500px;
-}
-
-.hide {
-    display: none;
+    margin-bottom: 2rem;
 }
 
 .current {
@@ -29,4 +35,8 @@ img {
 
 .spacer {
     padding: 2rem;
+}
+
+.controls {
+    margin-top: 15rem;
 }
